@@ -3,6 +3,7 @@ venv/
 instance
 .sierra_auth
 mir.db
+mir2.db
 sierra/
 venv
 __pycache__/
