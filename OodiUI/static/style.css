@@ -1,0 +1,385 @@
+#start1 {
+  position: fixed;
+  width: 265pt;
+  height: 157pt;
+  font-family: "Arial-BoldMT";
+  align-content: center;
+  font-size: 120pt;
+  color: rgb(42, 52, 60);
+  left: 250pt;
+  top: 10pt;
+}
+
+#start2 {
+  position: fixed;
+  width: 1293pt;
+  height: 88pt;
+  font-family: "ArialMT";
+  align-items: center;
+  font-size: 40pt;
+  color: rgb(42, 52, 60);
+  left: -40%;
+  top: 175pt;
+}
+
+.header-2-text {
+  text-align: center;
+}
+
+.look-button {
+  text-align: center;
+}
+
+.w3-btn {
+  position: relative;
+  align-content: center;
+  width: 160pt;
+  height: 100pt;
+  left: 15%;
+  top: 10pt;
+}
+
+.w3-btn:hover {
+  cursor: pointer;
+}
+
+.search-category {
+  position: fixed;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bolder;
+  color: rgb(42, 52, 60);
+  top: 30%;
+  left: 27%;
+}
+
+#arts {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  height: 30%;
+  width: 50%;
+  font-size:25pt;
+}
+
+#travel {
+  position: absolute;
+  top: 30%;
+  left: 16%;
+  height: 30%;
+  width: 50%;
+  font-size:25pt;
+}
+
+#cooking {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  height: 30%;
+  width: 50%;
+  font-size:25pt;
+}
+
+#languages {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  height: 30%;
+  width: 50%;
+  font-size:25pt;
+}
+
+#autobiography {
+  position: absolute;
+  top: 12.5%;
+  left: 20%;
+  height: 30%;
+  width: 50%;
+  font-size:25pt;
+}
+
+#history {
+  position: absolute;
+  top: 30%;
+  left: 17.5%;
+  height: 30%;
+  width: 50%;
+  font-size:25pt;
+}
+
+#go-to-main {
+  position: fixed;
+  width: 240pt;
+  height: 120pt;
+  left: 32.5%;
+  top: 320pt;
+  background-color: rgb(2, 147, 71);
+}
+
+a {
+  font-size: 40pt;
+  position:relative;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#search-header1 {
+  font-size: 40pt;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(42, 52, 60);
+}
+
+#search-box {
+  width: 450pt;
+  height: 50pt;
+  left: 350pt;
+  top: 120pt;
+  border: 1px solid;
+}
+
+#submit-box {
+  position: fixed;
+  width: 100pt;
+  height: 80pt;
+  left: 600pt;
+  top: 75pt;
+}
+
+input::placeholder {
+  font-size: 22.5pt;
+}
+
+input[type="text"] {
+  font-size: 22.5pt;
+}
+
+#search-for-category {
+  position: fixed;
+  font-size: 30pt;
+  text-align: center;
+  top: 50pt;
+  left: 15%;
+}
+
+#search-result {
+  font-size: 30pt;
+  position: relative;
+  text-align: center;
+  color: rgb(42, 52, 60);
+}
+
+#advice1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#advice2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.result-boxes {
+  left: 50pt;
+  margin: 5pt;
+}
+
+.term-results {
+  width: 600pt;
+}
+
+#look-for-book {
+  position: fixed;
+  text-align: relative;
+  top: 10pt;
+  left: 15%;
+  font-size: 40pt;
+}
+
+#no-guidance {
+  width: 240pt;
+  height: 160pt;
+}
+
+#yes-guidance {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#no-sign {
+  position: fixed;
+  width: 240pt;
+  height: 160pt;
+  left: 100pt;
+  top: 200pt;
+}
+
+#no-sign2 {
+  position: absolute;
+  width: 150pt;
+  height: 98pt;
+  left: 60pt;
+  top: 10pt;
+}
+
+#yes-sign {
+  position: fixed;
+  width: 240pt;
+  height: 160pt;
+  left: 350pt;
+  top: 200pt;
+  vertical-align: middle;
+}
+
+#yes-child {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#child-to-main {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+  color: white;
+}
+
+#lookright {
+  position: fixed;
+  font-size: 60pt;
+  font-weight: bold;
+  text-align: center;
+  top: 40pt;
+  left: 25%;
+  color: rgb(42, 52, 60);
+}
+
+#lookleft {
+  position: fixed;
+  font-size: 60pt;
+  font-weight: bold;
+  text-align: center;
+  top: 40pt;
+  left: 25%;
+  color: rgb(42, 52, 60);
+}
+
+#lookboth {
+  position: fixed;
+  font-size: 60pt;
+  font-weight: bold;
+  text-align: center;
+  top: 40pt;
+  left: 15%;
+  color: rgb(42, 52, 60);
+}
+
+#showtheway {
+  position: fixed;
+  font-size: 60pt;
+  font-weight: bold;
+  text-align: center;
+  top: 40pt;
+  left: 20%;
+  color: rgb(42, 52, 60);
+}
+
+#leftarrow {
+  position: fixed;
+  top: 280pt;
+  left: 225pt;
+}
+
+#rightarrow {
+  position: fixed;
+  top: 240pt;
+  left: 225pt;
+}
+
+#uparrow {
+  position: fixed;
+  top: 180pt;
+  left: 300pt;
+}
+
+#leftrightarrow {
+  position: fixed;
+  top: 280pt;
+  left: 180pt;
+}
+
+#going-home1 {
+  font-size: 80pt;
+  font-family: "Arial-BoldMT";
+  position: fixed;
+  text-align: center;
+  font-weight: bold;
+  top: -10%;
+  left: 240pt;
+  color: rgb(42, 52, 60);
+
+}
+
+#going-home2 {
+  font-size: 35pt;
+  font-family: "ArialMT";
+  position: fixed;
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(42, 52, 60);
+  top: 100pt;
+  left: 180pt;
+}
+
+#home-pic {
+  position: fixed;
+  left: 30%;
+  top: 200pt;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#spinner {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+}
+
+#spinner::after {
+    content:'Haetaan tuloksia...';
+    display:block;
+    font-size: 50pt;
+    position:absolute;
+    left:35%;
+    top:35%;
+}
+
+.pagebottom {
+  position: fixed;
+  top: 85%;
+  width: 100%;
+  z-index: -99;

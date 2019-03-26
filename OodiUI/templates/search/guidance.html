@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1 id="showtheway" class="wayhelp" class="hidden">Seuraa minua!</h1>
+<h1 id="lookleft" class="wayhelp" class="hidden">Katso hylly<br /> vasemmalla</h1>
+<h1 id="lookright" class="wayhelp" class="hidden">Katso hylly<br /> oikealla</h1>
+<h1 id="lookboth" class="wayhelp" class="hidden">Katso molemmat<br />hyllyt</h1>
+{% endblock %}
+{#% block body %}
+  <script>
+  function poll()
+{% endblock %#}
+{% block content %}
+  <img src= {{ url_for('static', filename = 'images/nuoli_vasen.jpg') }} alt="left arrow" id="leftarrow" class="arrow" class="hidden">
+  <img src= {{ url_for('static', filename = 'images/nuoli_oikea.jpg') }} alt="right arrow" id="rightarrow" class="arrow" class="hidden">
+  <img src= {{ url_for('static', filename = 'images/nuoli_ylos.jpg') }} alt="up arrow" id="uparrow" class="arrow" class="hidden">
+  <img src= {{ url_for('static', filename = 'images/nuoli_molemmat.jpg') }} alt="left right arrow" id="leftrightarrow" class="arrow" class="hidden">
+{% endblock %}
+{% block head %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='arrow.js') }}"></script>
+{% endblock %}

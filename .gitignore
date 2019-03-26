@@ -1,0 +1,10 @@
+__pycache__
+venv/
+instance
+.sierra_auth
+mir.db
+sierra/
+venv
+__pycache__/
+direction.txt
+home.txt

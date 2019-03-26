@@ -1,0 +1,349 @@
+#start1 {
+  position: fixed;
+  width: 265pt;
+  height: 157pt;
+  font-family: "Arial-BoldMT";
+  align-content: center;
+  font-size: 140pt;
+  color: rgb(42, 52, 60);
+  left: 37.5%;
+  top: 20pt;
+}
+
+#start2 {
+  position: fixed;
+  width: 1293pt;
+  height: 88pt;
+  font-family: "ArialMT";
+  align-items:stretch;
+  font-size: 40pt;
+  color: rgb(42, 52, 60);
+  left: -12.5%;
+  top: 205pt;
+}
+
+.header-2-text {
+  text-align: center;
+}
+
+.look-button {
+  text-align: center;
+}
+
+.w3-btn {
+  position: relative;
+  align-content: center;
+  width: 240pt;
+  height: 160pt;
+  left: 15%;
+  top: 10pt;
+}
+
+.w3-btn:hover {
+  cursor: pointer;
+}
+
+.search-category {
+  position: fixed;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: bolder;
+  color: rgb(42, 52, 60);
+  top: 20%;
+  left: 33%;
+}
+
+#arts {
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#travel {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#cooking {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#languages {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#autobiography {
+  position: absolute;
+  top: 12.5%;
+  left: 17.5%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#history {
+  position: absolute;
+  top: 30%;
+  left: 17.5%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#go-to-main {
+  position: fixed;
+  width: 240pt;
+  height: 160pt;
+  left: 38%;
+  top: 400pt;
+}
+
+a {
+  font-size: 40pt;
+  position:relative;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#search-header1 {
+  font-size: 40pt;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(42, 52, 60);
+}
+
+#search-box {
+  width: 688pt;
+  height: 60pt;
+  left: 286pt;
+  top: 154pt;
+  border: 1px solid;
+}
+
+#submit-box {
+  position: fixed;
+  width: 100pt;
+  height: 80pt;
+  left: 865pt;
+  top: 80pt;
+}
+
+input::placeholder {
+  font-size: 22.5pt;
+}
+
+input[type="text"] {
+  font-size: 22.5pt;
+}
+
+#search-for-category {
+  position: fixed;
+  font-size: 30pt;
+  left: 270pt;
+  top: 250pt;
+}
+
+#search-result {
+  font-size: 40pt;
+  position: relative;
+  text-align: center;
+  color: rgb(42, 52, 60);
+}
+
+#advice {
+  text-align: center;
+  font-weight: bold;
+}
+
+.result-boxes {
+  left: 50pt;
+  margin: 5pt;
+}
+
+.term-results {
+  width: 900pt;
+}
+
+#look-for-book {
+  position: relative;
+  text-align: center;
+  top: 100pt;
+  font-size: 40pt;
+}
+
+#no-guidance {
+  width: 240pt;
+  height: 160pt;
+}
+
+#yes-guidance {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#no-sign {
+  position: fixed;
+  width: 240pt;
+  height: 160pt;
+  left: 250pt;
+  top: 400pt;
+}
+
+#no-sign2 {
+  position: fixed;
+  width: 200pt;
+  height: 130pt;
+  left: 60pt;
+  top: 560pt;
+}
+
+#yes-sign {
+  position: fixed;
+  width: 240pt;
+  height: 160pt;
+  left: 500pt;
+  top: 400pt;
+  vertical-align: middle;
+}
+
+#yes-child {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#child-to-main {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  height: 30%;
+  width: 50%;
+  font-weight:inherit;
+}
+
+#lookright {
+  position: fixed;
+  font-size: 90pt;
+  font-weight: bold;
+  text-align: center;
+  top: 79pt;
+  left: 27%;
+  color: rgb(42, 52, 60);
+}
+
+#lookleft {
+  position: fixed;
+  font-size: 90pt;
+  font-weight: bold;
+  text-align: center;
+  top: 79pt;
+  left: 25%;
+  color: rgb(42, 52, 60);
+}
+
+#lookboth {
+  position: fixed;
+  font-size: 90pt;
+  font-weight: bold;
+  text-align: center;
+  top: 79pt;
+  left: 15%;
+  color: rgb(42, 52, 60);
+}
+
+#showtheway {
+  position: fixed;
+  font-size: 90pt;
+  font-weight: bold;
+  text-align: center;
+  top: 179pt;
+  left: 20%;
+  color: rgb(42, 52, 60);
+}
+
+#leftarrow {
+  position: fixed;
+  top: 431pt;
+  left: 410pt;
+}
+
+#rightarrow {
+  position: fixed;
+  top: 431pt;
+  left: 410pt;
+}
+
+#uparrow {
+  position: fixed;
+  top: 350pt;
+  left: 460pt;
+}
+
+#leftrightarrow {
+  position: fixed;
+  top: 431pt;
+  left: 310pt;
+}
+
+#going-home1 {
+  font-size: 122pt;
+  font-family: "Arial-BoldMT";
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(42, 52, 60);
+
+}
+
+#going-home2 {
+  font-size: 35pt;
+  font-family: "ArialMT";
+  position: relative;
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(42, 52, 60);
+  top: -75pt;
+}
+
+#home-pic {
+  position: relative;
+  left: 35%;
+  top: -75pt;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

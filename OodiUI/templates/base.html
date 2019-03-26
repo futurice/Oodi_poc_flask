@@ -1,0 +1,49 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<img src= {{ url_for('static', filename = 'images/pagebottom.jpg') }} alt="oodi" class="pagebottom">
+<section class="content">
+  <header>
+    {% block header %}
+    <h1 id="search-header1">{% block title %}Etsi tietokirja{% endblock %}</h1>
+    {% endblock %}
+  </header>
+  {% block content %}
+  <br />
+  <form action = "/term_result" method = "POST" class="search-field">
+    <input type="text" name="searchfield" id="search-box" placeholder="Kirjan tai kirjailijan nimi">
+    <input type="image" src="{{ url_for('static', filename='images/eteenpain.jpg')}}" alt="Etsi" value="Etsi" id="submit-box" onclick="$('#spinner').show()">
+  </form>
+  <br />
+  <body>
+    <!-- spinner code from: http://www.menucool.com/9499/CSS-loading-spinner-with-a-semi-transparent-background-->
+    <div id="spinner"></div>
+  </body>
+  <br />
+  <br />
+  <h1 class="search-category">Etsi tietokirjan kategoria</h1>
+  <br />
+    <a href="/guidance_category?category=Taidekirjat&id=79000" value="Taidekirjat" name="categoryname" class="w3-btn w3-green w3-round-large">
+      <div id="arts">Taidekirjat</div>
+      </a>
+    <a href="/guidance_category?category=Matkailu&id=46900" value="Matkailu" name="categoryname" class="w3-btn w3-green w3-round-large">
+      <div id="travel">Matkailu</div>
+    </a>
+    <a href="/guidance_category?category=Keittokirjat&id=69110" value="Keittokirjat" name="categoryname" class="w3-btn w3-green w3-round-large"><div id="cooking">Keittokirjat</div>
+    </a>
+    <br />
+    <br />
+    <br />
+    <a href="/guidance_category?category=Kielet&id=85000" value="Kielet" name="categoryname" class="w3-btn w3-green w3-round-large">
+      <div id="languages">Kielet</div>
+    </a>
+    <a href="/guidance_category?category=Elämänkerrat&id=99000" value="Elämänkerrat" name="categoryname" class="w3-btn w3-green w3-round-large">
+      <div id="autobiography">Elämän-<br />kerrat</div>
+    </a>
+    <a href="/guidance_category?category=Historia&id=90000" value="Historia" name="categoryname" class="w3-btn w3-green w3-round-large"><div id="history">Historia</div>
+    </a>
+  {% endblock %}
+</section>
+{% block head %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock %}

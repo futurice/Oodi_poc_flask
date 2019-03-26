@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1 id="search-for-category"><center>Lähdetäänkö hakemaan kategoriaa<br /> <strong>{{categoryname}}</strong>?</center></h1>
+<br />
+<br />
+{% endblock %}
+
+{% block content %}
+<a href="/main"><img src="{{ url_for('static', filename='images/back_iso.jpg')}}" alt="takaisin" id="no-sign"></a>
+<a href="/guidance?category={{categoryname}}&category_id={{section}}" id="yes-sign" class="w3-btn w3-green w3-round-large">
+  <div id="yes-child">Etsi hylly</div>
+</a>
+
+{% endblock %}

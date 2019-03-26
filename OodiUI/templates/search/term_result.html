@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<br />
+<br />
+{% endblock %}
+
+{% block content %}
+  <h1 id="search-result">Hyllyssä olevat tulokset haulle <strong>"{{searchterm}}"</strong></h1>
+  <br />
+  <a href="/main" id="back-to-main"><img src="{{ url_for('static', filename='images/back_iso.jpg')}}" alt="takaisin" id="no-sign2"></a>
+  <br />
+  <br />
+  <br />
+  <br />
+  {% if books|length == 0 %}
+    <h1 id="advice1">Ei tuloksia haulle:<strong>&nbsp;{{searchterm}}</strong></h1>
+  {% else %}
+    <h1 id="advice2">Klikkaa laatikkoa!</h1>
+  {% endif %}
+  {% for b_id, b_info in books.items() %}
+    <a href="/term_result/guidance_term?title={{b_info['title']}}&id={{b_id}}" class=" w3-button w3-light-grey w3-left-align result-boxes"><h3 class="term-results">{{b_info['title']}}<br />Tekijä:&nbsp;{{b_info['author']}}</h3></a>
+  {% endfor %}
+
+{% endblock %}
