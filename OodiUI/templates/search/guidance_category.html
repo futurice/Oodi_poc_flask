@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block content %}
-<a href="/main"><img src="{{ url_for('static', filename='images/back_iso.jpg')}}" alt="takaisin" id="no-sign"></a>
-<a href="/guidance?category={{categoryname}}&category_id={{section}}" id="yes-sign" class="w3-btn w3-green w3-round-large">
+<a href="/main" class="w3-button w3-round-large" id="back-to-main2">Takaisin<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-sign"></a>
+<a href="/guidance?category={{categoryname}}&category_id={{section}}" id="yes-sign" class="w3-btn  w3-round-large">
   <div id="yes-child">Etsi hylly</div>
 </a>
 

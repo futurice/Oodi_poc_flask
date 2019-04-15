@@ -4,9 +4,9 @@
   height: 157pt;
   font-family: "Arial-BoldMT";
   align-content: center;
-  font-size: 120pt;
+  font-size: 70pt;
   color: rgb(42, 52, 60);
-  left: 250pt;
+  left: 42.5%;
   top: 10pt;
 }
 
@@ -16,10 +16,10 @@
   height: 88pt;
   font-family: "ArialMT";
   align-items: center;
-  font-size: 40pt;
+  font-size: 30pt;
   color: rgb(42, 52, 60);
-  left: -40%;
-  top: 175pt;
+  left: -37%;
+  top: 100pt;
 }
 
 .header-2-text {
@@ -56,10 +56,12 @@
 #arts {
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 2.5%;
   height: 30%;
   width: 50%;
   font-size:25pt;
+  font-weight: bold;
+  color: white;
 }
 
 #travel {
@@ -69,15 +71,19 @@
   height: 30%;
   width: 50%;
   font-size:25pt;
+  font-weight: bold;
+  color: white;
 }
 
 #cooking {
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 0%;
   height: 30%;
   width: 50%;
   font-size:25pt;
+  font-weight: bold;
+  color: white;
 }
 
 #languages {
@@ -87,15 +93,19 @@
   height: 30%;
   width: 50%;
   font-size:25pt;
+  font-weight: bold;
+  color: white;
 }
 
 #autobiography {
   position: absolute;
   top: 12.5%;
-  left: 20%;
+  left: 22.5%;
   height: 30%;
   width: 50%;
   font-size:25pt;
+  font-weight: bold;
+  color: white;
 }
 
 #history {
@@ -105,15 +115,60 @@
   height: 30%;
   width: 50%;
   font-size:25pt;
+  font-weight: bold;
+  color: white;
 }
 
 #go-to-main {
   position: fixed;
-  width: 240pt;
-  height: 120pt;
-  left: 32.5%;
-  top: 320pt;
+  width: 160pt;
+  height: 100pt;
+  left: 40%;
+  top: 225pt;
+  font-weight: bold;
   background-color: rgb(2, 147, 71);
+}
+
+#travel-btn {
+  position: fixed;
+  background-color: rgb(2, 147, 71);
+  left: 17%;
+  top: 35%;
+}
+
+#cooking-btn {
+  position: fixed;
+  background-color: rgb(2, 147, 71);
+  left: 40%;
+  top: 35%;
+}
+
+#arts-btn {
+  position: fixed;
+  background-color: rgb(2, 147, 71);
+  left: 63%;
+  top: 35%;
+}
+
+#language-btn {
+  position: fixed;
+  background-color: rgb(2, 147, 71);
+  left: 17%;
+  top: 57.5%;
+}
+
+#bio-btn {
+  position: fixed;
+  background-color: rgb(2, 147, 71);
+  left: 40%;
+  top: 57.5%;
+}
+
+#history-btn {
+  position: fixed;
+  background-color: rgb(2, 147, 71);
+  left: 63%;
+  top: 57.5%;
 }
 
 a {
@@ -126,60 +181,84 @@ a:hover {
 }
 
 #search-header1 {
-  font-size: 40pt;
-  position: relative;
+  font-size: 27pt;
+  position: fixed;
   text-align: center;
   font-weight: bold;
+  left: 40%;
   color: rgb(42, 52, 60);
+  font-family: "Arial-BoldMT";
+}
+
+#search-header2 {
+  font-size: 27pt;
+  width:auto;
+  height:auto;
+  position: fixed;
+  text-align:left;
+  font-weight: bold;
+  left: 30%;
+  top: 22.5%;
+  color: rgb(42, 52, 60);
+  font-family: "Arial-BoldMT";
 }
 
 #search-box {
   width: 450pt;
   height: 50pt;
-  left: 350pt;
-  top: 120pt;
+  position: fixed;
+  top: 55pt;
+  left: 20%;
   border: 1px solid;
 }
 
 #submit-box {
   position: fixed;
-  width: 100pt;
-  height: 80pt;
+  width: 70pt;
+  height: 50pt;
   left: 600pt;
-  top: 75pt;
+  top: 55pt;
+  background-color: rgb(2, 146, 71);
 }
 
 input::placeholder {
-  font-size: 22.5pt;
+  font-size: 20pt;
 }
 
 input[type="text"] {
-  font-size: 22.5pt;
+  font-size: 20pt;
 }
 
 #search-for-category {
   position: fixed;
   font-size: 30pt;
+  font-family: "ArialMT";
+  color: rgb(42, 52, 60);
   text-align: center;
   top: 50pt;
-  left: 15%;
+  left: 17.5%;
 }
 
 #search-result {
   font-size: 30pt;
   position: relative;
   text-align: center;
+  font-family: "ArialMT";
   color: rgb(42, 52, 60);
 }
 
 #advice1 {
   text-align: center;
   font-weight: bold;
+  font-family: "ArialMT";
+  color: rgb(42, 52, 60);
 }
 
 #advice2 {
   text-align: center;
   font-weight: bold;
+  font-family: "ArialMT";
+  color: rgb(42, 52, 60);
 }
 
 .result-boxes {
@@ -194,14 +273,20 @@ input[type="text"] {
 #look-for-book {
   position: fixed;
   text-align: relative;
+  font-family: "ArialMT";
+  color: rgb(42, 52, 60);
   top: 10pt;
   left: 15%;
   font-size: 40pt;
 }
 
 #no-guidance {
-  width: 240pt;
-  height: 160pt;
+  position: absolute;
+  align-items: center;
+  width: 70pt;
+  height: 25pt;
+  left: 27.5%;
+  top: 55%;
 }
 
 #yes-guidance {
@@ -214,46 +299,110 @@ input[type="text"] {
 }
 
 #no-sign {
+  position: absolute;
+  align-items: center;
+  width: 70pt;
+  height: 25pt;
+  left: 27.5%;
+  top: 55%;
+  color: rgb(255, 255, 255);
+}
+
+#back-to-main {
+  width: 160pt;
+  height: 100pt;
+  left: 60pt;
+  top: 10pt;
+  font-family: "Arial-BoldMT";
+  font-weight: bold;
+  font-size: 30pt;
+  background-color: rgb(0, 114, 188);
+  color: rgb(255, 255, 255);
+}
+
+#back-to-main2 {
   position: fixed;
-  width: 240pt;
-  height: 160pt;
-  left: 100pt;
+  width: 160pt;
+  height: 100pt;
+  left: 27.5%;
   top: 200pt;
+  font-weight: bold;
+  font-size: 30pt;
+  background-color: rgb(0, 114, 188);
+  color: rgb(255, 255, 255);
 }
 
 #no-sign2 {
   position: absolute;
-  width: 150pt;
-  height: 98pt;
-  left: 60pt;
-  top: 10pt;
+  align-items: center;
+  width: 70pt;
+  height: 25pt;
+  left: 27.5%;
+  top: 55%;
+}
+
+#no-sign3 {
+  position: fixed;
+  width: 160pt;
+  height: 100pt;
+  left: 27.5%;
+  top: 200pt;
+  font-weight: bold;
+  font-size: 30pt;
+  background-color: rgb(0, 114, 188);
+  color: rgb(255, 255, 255);
 }
 
 #yes-sign {
   position: fixed;
-  width: 240pt;
-  height: 160pt;
-  left: 350pt;
+  width: 160pt;
+  height: 100pt;
+  left: 51%;
   top: 200pt;
   vertical-align: middle;
+  font-weight: bold;
+  font-size: 30pt;
+  background-color: rgb(2, 147, 71);
+}
+
+#yes-sign2 {
+  position: fixed;
+  width: 160pt;
+  height: 100pt;
+  left: 51%;
+  top: 200pt;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 30pt;
+  background-color: rgb(2, 147, 71);
 }
 
 #yes-child {
   position: absolute;
-  top: 30%;
-  left: 15%;
+  top: 25%;
+  left: 2.5%;
   height: 30%;
   width: 50%;
-  font-weight:inherit;
+  color: white;
 }
 
 #child-to-main {
   position: absolute;
-  top: 30%;
-  left: 15%;
+  top: 25%;
+  left: 2.5%;
   height: 30%;
   width: 50%;
-  font-weight:inherit;
+  font-size: 30pt;
+  color: white;
+}
+
+#child-to-book2 {
+  position: absolute;
+  top: 25%;
+  left: 2.5%;
+  height: 30%;
+  width: 50%;
+  font-size: 30pt;
   color: white;
 }
 

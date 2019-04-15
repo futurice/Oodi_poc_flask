@@ -4,12 +4,11 @@
 <br />
 <br />
 {% endblock %}
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 {% block content %}
   <h1 id="search-result">Hyllyssä olevat tulokset haulle <strong>"{{searchterm}}"</strong></h1>
   <br />
-  <a href="/main" id="back-to-main"><img src="{{ url_for('static', filename='images/back_iso.jpg')}}" alt="takaisin" id="no-sign2"></a>
-  <br />
+  <a href="/main" id="back-to-main" class="w3-button w3-round-large">Takaisin<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-sign2"></a>
   <br />
   <br />
   <br />
