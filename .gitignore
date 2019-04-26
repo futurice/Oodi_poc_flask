@@ -9,3 +9,4 @@ venv
 __pycache__/
 direction.txt
 home.txt
+emotions.js

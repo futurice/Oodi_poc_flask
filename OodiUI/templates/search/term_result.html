@@ -1,24 +1,29 @@
 {% extends 'base.html' %}
 
 {% block header %}
-<br />
-<br />
+
 {% endblock %}
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 {% block content %}
-  <h1 id="search-result">Hyllyssä olevat tulokset haulle <strong>"{{searchterm}}"</strong></h1>
-  <br />
-  <a href="/main" id="back-to-main" class="w3-button w3-round-large">Takaisin<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-sign2"></a>
-  <br />
+  <h1 id="search-result">Available books with the keyword: <strong>{{searchterm|truncate(8, True)}}</strong></h1>
+  <!--<h1 id="search-result">Hyllyssä olevat tulokset haulle <strong>"{{searchterm}}"</strong></h1>-->
   <br />
   <br />
+  <a href="/main" id="back-to-main" class="w3-button w3-round-large">Go back<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-sign2"></a>
   {% if books|length == 0 %}
-    <h1 id="advice1">Ei tuloksia haulle:<strong>&nbsp;{{searchterm}}</strong></h1>
-  {% else %}
-    <h1 id="advice2">Klikkaa laatikkoa!</h1>
+  <h1 id="advice1">No results for:<strong>&nbsp;{{searchterm|truncate(20, True)}}</strong></h1>
+    <!--<h1 id="advice1">Ei tuloksia haulle:<strong>&nbsp;{{searchterm}}</strong></h1>-->
   {% endif %}
-  {% for b_id, b_info in books.items() %}
-    <a href="/term_result/guidance_term?title={{b_info['title']}}&id={{b_id}}" class=" w3-button w3-light-grey w3-left-align result-boxes"><h3 class="term-results">{{b_info['title']}}<br />Tekijä:&nbsp;{{b_info['author']}}</h3></a>
-  {% endfor %}
+  <br />
+  <div id="scroll-box">
+    {% for b_id, b_info in books.items() %}
+      <h3 class="term-results w3-row w3-light-grey"><span class="w3-col m9" id="span-author">&nbsp;{{ b_info['title']|truncate(50, True) }}<br />&nbsp;Author:&nbsp;{{b_info['author']|truncate(42, True)}}</span>
+      <span class="w3-col m3" style="text-align:right;" id="column-span"><a href="/term_result/guidance_term?title={{b_info['title']}}&id={{b_id}}" id="book-indicator">
+      <img src="{{ url_for('static', filename='images/pieni_nuoli_oikea.svg')}}" alt="Etsi" value="Etsi" class="w3-btn w3-round-large w3-left-align" id="choose-book">
+    </a></span></h3>
+    {% endfor %}
+  </div>
 
 {% endblock %}
+
+<!-- class="w3-button w3-light-grey w3-left-align result-boxes" -->

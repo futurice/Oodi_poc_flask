@@ -1,13 +1,14 @@
 <!doctype html>
+<html>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<section class="content">
-  <header>
-    <h1 id="going-home1">Heihei!</h1>
-    <h2 id="going-home2">Palaan lähtöpisteeseen.</h2>
-  </header>
-  <head>
-    <img src= {{ url_for('static', filename = 'images/koti.jpg') }} alt="home" id="home-pic" class="home">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="{{ url_for('static', filename='home.js') }}"></script>
-    <img src= {{ url_for('static', filename = 'images/pagebottom.jpg') }} alt="oodi" class="pagebottom">
-</section>
+<header>
+  <h1 id="going-home1">Bye bye!</h1>
+  <h2 id="going-home2">I'm going back to the starting point.</h2>
+  <!--<h1 id="going-home1">Heihei!</h1>
+  <h2 id="going-home2">Palaan lähtöpisteeseen.</h2>-->
+</header>
+<img src= {{ url_for('static', filename = 'images/koti.svg') }} alt="home" id="home-pic" class="home">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+<img src= {{ url_for('static', filename = 'images/pagebottom.jpg') }} alt="oodi" id="oodi-last" class="pagebottom">
+</html>

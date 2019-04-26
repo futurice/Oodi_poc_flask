@@ -1,15 +1,16 @@
 {% extends 'base.html' %}
 
 {% block header %}
-<h1 id="search-for-category"><center>Lähdetäänkö hakemaan kategoriaa<br /> <strong>{{categoryname}}</strong>?</center></h1>
+<h1 id="search-for-category"><center>Would you like to be guided to the category<br /> <strong>{{categoryname}}</strong>?</center></h1>
+<!--<h1 id="search-for-category"><center>Lähdetäänkö hakemaan kategoriaa<br /> <strong>{{categoryname}}</strong>?</center></h1>-->
 <br />
 <br />
 {% endblock %}
 
 {% block content %}
-<a href="/main" class="w3-button w3-round-large" id="back-to-main2">Takaisin<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-sign"></a>
+<a href="/main" class="w3-button w3-round-large" id="back-to-main2">Go back<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-sign"></a>
 <a href="/guidance?category={{categoryname}}&category_id={{section}}" id="yes-sign" class="w3-btn  w3-round-large">
-  <div id="yes-child">Etsi hylly</div>
+  <div id="yes-child">Proceed</div>
 </a>
 
 {% endblock %}

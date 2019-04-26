@@ -5,9 +5,14 @@ import sierra
 import time
 from pathlib import Path
 import sqlite3
+from flask_caching import Cache
+import asyncio
+
 
 def create_app(test_config=None):
+    cache = Cache(config={'CACHE_TYPE': 'simple'})
     app = Flask(__name__, instance_relative_config=True)
+    cache.init_app(app)
 
     if test_config is None:
         app.config.from_pyfile('config.py', silent=True)
@@ -24,21 +29,16 @@ def create_app(test_config=None):
 
         return render_template('start.html')
 
+    def start_emotions():
+        ### korvaa sierran metodi halutulla metodilla alla ###
+        return sierra.search_shelved_books("kalastus")
+
     @app.route('/main', methods=['POST', 'GET'])
     def search_screen():
-        #config = Path("OodiUI/static/direction.txt")
-        #if config.is_file():
-        #    os.remove("OodiUI/static/direction.txt")
-        #config2 = Path("OodiUI/static/home.txt")
-        #if config2.is_file():
-        #    os.remove("OodiUI/static/home.txt")
-        #if request.method == 'POST':
-            #searchterm = request.form['searchfield']
-            #error = None
-            #send searchterm forward to the sierra api?
-            #if result == "":
-            #    error = 'Kirjoita hakukenttään avainsana.'
-        #flash(error)
+        first = request.args.get('first');
+        if first == "True":
+            start_emotions()
+
         return render_template('base.html')
 
     @app.route('/term_result', methods=['POST', 'GET'])
@@ -54,7 +54,11 @@ def create_app(test_config=None):
 
     @app.route('/term_result/guidance_term', methods=['POST', 'GET'])
     def guidance_term():
-        bookname = request.args.get('title')[:40]+"..." #get the booktitle
+        b_name = request.args.get('title') #get the booktitle
+        if len(b_name) > 40:
+            bookname = b_name[:40]+"..."
+        else:
+            bookname = b_name
         book_id = request.args.get('id') #get the id of the book
         print(bookname)
         print(book_id)

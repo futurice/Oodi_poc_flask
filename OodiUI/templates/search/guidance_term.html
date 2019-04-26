@@ -1,15 +1,19 @@
 {% extends 'base.html' %}
 
 {% block header %}
-<h1 id="look-for-book">Lähdetäänkö etsimään kirjaa<br /> <strong>{{bookname}}</strong></h1>
+<h1 id="look-for-book">Would you like to be guided to the book:<br /> <strong>{{bookname}}</strong></h1>
+<!--<h1 id="look-for-book">Lähdetäänkö etsimään kirjaa<br /> <strong>{{bookname}}</strong></h1>-->
 <br />
 <br />
 {% endblock %}
 
 {% block content %}
-<a href="javascript:history.back()" class="w3-button w3-round-large" id="no-sign3">Takaisin<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-guidance"></a>
+<a href="javascript:history.back()" class="w3-button w3-round-large" id="no-sign3">Go back<img src="{{ url_for('static', filename='images/pieni_nuoli_vasen.svg')}}" alt="takaisin" id="no-guidance" onclick="$('#spinner2').show()"></a>
 <a href="/guidance?id={{book_id}}" id="yes-sign2" class="w3-btn w3-round-large" class="look-button">
-  <div id="child-to-book2">Etsi kirja</div>
+  <div id="child-to-book2">Proceed</div>
 </a>
+<!-- spinner code from: http://www.menucool.com/9499/CSS-loading-spinner-with-a-semi-transparent-background-->
+<div id="spinner2"><!--Haetaan tuloksia<span>.</span><span>.</span><span>.</span>-->
+</div>
 
 {% endblock %}
