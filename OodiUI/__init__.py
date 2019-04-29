@@ -31,7 +31,15 @@ def create_app(test_config=None):
 
     def start_emotions():
         ### korvaa sierran metodi halutulla metodilla alla ###
-        return sierra.search_shelved_books("kalastus")
+        return sierra.ui_in_use()
+
+    @app.route('/flag_reset', methods=['POST', 'GET'])
+    def flag_reset():
+        print("ajax call received, resetting flag")
+        ### sierra function here ###
+        sierra.ui_not_in_use()
+        return "OK"
+
 
     @app.route('/main', methods=['POST', 'GET'])
     def search_screen():
